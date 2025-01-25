@@ -147,7 +147,7 @@ static void search_and_replace(color_ostream& out, bool enable) {
 		return;
 	}
 	out.color(enable ? COLOR_LIGHTCYAN : COLOR_LIGHTMAGENTA);
-	out.print(enable ? "NoZoneCollision: patched successfully\n" : "NoZoneCollision: patch reverted\n");
+	out.print(enable ? "NoZoneCollision: patched successfully.\n" : "NoZoneCollision: patch reverted. Zones will get overlapping flags as usual.\n");
 	out.reset_color();
 	CloseHandle(hProcess);
 }
